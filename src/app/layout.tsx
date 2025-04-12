@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/navbar/Navbar";
 import Sidebar from "@/components/sidebar/Sidebar";
+import Footer from "@/components/footer/Footer";
 
 export const metadata = {
   title: "Portafolio JuniorSolis",
@@ -17,9 +18,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Sidebar />
           <div className="flex flex-col w-full">
             <Navbar />
+            
+
             <main className="flex-1 p-4">{children}</main>
-            </div>
-            </div>
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
